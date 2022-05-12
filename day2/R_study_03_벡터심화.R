@@ -62,4 +62,37 @@ d <- 1:9
 d <= 5
 d > 5
 d[d > 5]
-sum[d > 5]
+sum(d[d > 5])
+d == 5
+condi <- d >5 & d<8
+d[condi]
+
+# LAB R 카페 매출 분석 1
++espreso <- c(4,5,3,6,5,4,7)
+americano <- c(63,68,64,68,72,89,94)
+latte <- c(61,70,59,71,71,92,88)
+price <- c(2000,2500,3000)
+names(price) <- c('esp','ame','lat')
+price
+
+sale.espreso <- price['esp'] * espreso
+sale.espreso
+sale.americano <- price['ame'] * americano
+sale.americano
+sale.latte <- price['lat'] * latte
+sale.latte
+
+sale.day <- sale.espreso + sale.americano + sale.latte
+sale.day
+names(sale.day) <- c('Mon','Tue','Wed','Thu','Fri','Sat','Sun')
+sale.day
+
+cat('총매출액은', sum(sale.day), '원')
+sale.sum <- sum(sale.day)
+sale.mean <- mean(sale.day)
+sale.mean
+cat('평균매출액은', sale.mean, '원')
+
+sale.day
+result <- names(sale.day[sale.day >= sale.mean])
+cat('평균매출액보다 매출액이 높은 요일은','sat')
