@@ -66,4 +66,6 @@ who<-'seo'
 sum = deposit[who] * (1 + rate[who]/100)^period[who]
 sum
 
-
+# 산술 연산으로 간단하게 결과내기
+result = deposit * (1 + rate/100)^period
+result
