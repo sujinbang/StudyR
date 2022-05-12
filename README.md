@@ -1,3 +1,9 @@
+![R](./image/Rstudio.png)
+<!-- 
+<img src='./image/Rstudio.png' />  
+-->
+
+
 # StudyR
 R 학습 리포지토리(한가람 IT 부산)
 
