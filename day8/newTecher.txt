@@ -1,0 +1,4 @@
+김주완 01042998632 kjw@hangaramit.com
+\\192.168.0.33\r\data
+id 빅데이터
+pw 1234
